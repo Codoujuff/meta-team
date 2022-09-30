@@ -1,0 +1,14 @@
+.first:hover{
+        width: 10%;
+        height: 10%;
+        border-radius: 200px;
+        color: rgb(250, 235, 215);
+}
+.btn{
+        border-color: white;
+}
+.fun:hover{
+        width: 90%;
+        height: 90%;
+        
+}
