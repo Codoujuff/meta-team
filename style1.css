@@ -1,0 +1,209 @@
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: "system-ui",sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+    position: relative;
+    height: 97vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.sec-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px 0;
+}
+
+nav .logo {
+	width: 120px;
+	cursor: pointer;
+	font-size: 2.5rem;
+	font-style: oblique;
+	font-weight: bold;
+	text-decoration: none;
+	color: #4E7A0F;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	align-items: center;
+	padding-right: 40px;
+	text-align: right;
+	list-style-type: none;
+}
+
+ul li {
+	margin-right: 10px;
+}
+
+ul li a {
+	position: relative;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+}
+
+button.btn {
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: 0;
+	background-color: transparent;
+	color: #4E7A0F;
+	border: 1px solid transparent;
+	transition: border-color 0.3s ease;
+}
+
+button.btn:hover {
+	border-color: #4E7A0F;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.formWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: auto;
+}
+
+.formWrapper .card {
+	width: 360px;
+    height: 400px;
+	padding: 20px;
+    background-color: rgba(0, 0, 0, 0.083);
+	visibility: hidden;
+	opacity: 100%;
+	transition: opacity 0.2s, visibility 0.1s;
+
+}
+
+.card.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 30px 20px 0;
+	font-size: 1.1rem;
+	color: #4E7A0F;
+	box-shadow: 2px 3px 8px#4E7A0F;
+	border-radius: 50px;
+}
+
+.card-header .form-header {
+	flex: 50%;
+	text-align: center;
+	padding: 10px 0;
+	border: 1px solid transparent;
+	border-radius: 50px;
+	user-select: none;
+}
+
+.card-header .form-header:hover {
+	cursor: pointer;
+}
+
+.card-header .form-header.active {
+	border-color: #4E7A0F;
+
+    box-shadow: 10px 10px 5px 0px  #4E7A0F inset;
+    -webkit-box-shadow: 10px 10px 5px 0px  #4E7A0F inset;
+    -moz-box-shadow: 10px 10px 5px 0px  #4E7A0F inset;
+    border-color: #4E7A0F;
+    transition:border-color 0.3s,box-shadow 0.3s;
+}
+
+.card-body {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 40px 0;
+	text-align: center;
+}
+
+form {
+	flex: 0 0 100%;
+}
+
+.form-control {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #4E7A0F;
+	background: none;
+	outline: none;
+	padding: 10px 5px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+label {
+	display: block;
+	padding-bottom: 20px;
+	color:#4E7A0F;
+	text-align: left;
+}
+
+.form-control::placeholder {
+	color:#4E7A0F;
+}
+
+.formButton {
+	border: 1px solid transparent;
+	padding: 1rem 3rem;
+	background-color: #4E7A0F;
+	border-radius: 50px;
+	margin-top: 1rem;
+	font-size: 1rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formButton:hover {
+	box-shadow: 3px 5px 15px #4E7A0F;
+	transform: translateY(-5px);
+}
+
+.toggleForm {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+.invalide{
+	color: red;
+}
+.invalide:before{
+	position: relative;
+	left: -7px;
+	content:"X";
+}
+.valid{
+	color: #4E7A0F;
+}
+.valide:before{
+	position: relative;
+	left: -7px;
+	content:"YES";
+}
